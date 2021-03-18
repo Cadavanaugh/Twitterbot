@@ -18,7 +18,7 @@ pip install tweepy Pillow
 
 When running the script for the first time a "Bot Settings" window will appear for you to input the necessary data.
 
-![settings](/img/settings.png "Bot Settings window.")
+![settings](https://imgur.com/a/WNgImHx "Bot Settings window.")
 
 In the **Keys & Tokens** section you have to input the four required API Keys.
 
