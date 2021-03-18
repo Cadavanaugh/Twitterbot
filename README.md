@@ -11,26 +11,25 @@ In order to the script run correctly you'll have to install two third-party modu
 
 Just use the commands shown below in your terminal.
 ```
-pip install tweepy -y
-pip install Pillow -y
+pip install tweepy Pillow
 ```
 
 ## How does it work
 
 When running the script for the first time a "Bot Settings" window will appear for you to input the necessary data.
 
-![Settings](/img/settings.PNG "Bot Settings window.")
+![Settings](img/settings.png "Bot Settings window.")
 
 In the **Keys & Tokens** section you have to input the four required API Keys.
 
 In the **Search for tweets** field you'll input the word you want the bot to interact with.
 
-Hitting the **ENTER** button will create a "settings.txt" file which will storage all the previous data. "Bot Settings" will close automatically.
+Hitting the **ENTER** button will create a "_settings.txt_" file which will storage all the previous data. "Bot Settings" will close automatically.
 
-![BotGUI](/img/gui.PNG "TwitterBot window.")
+![BotGUI](img/gui.png "TwitterBot window.")
 
 Now just input the @ and click START BOT. The border will turn green and a terminal will show up.
 
-![BotGUI working](/img/working.PNG "Working bot.")
+![BotGUI working](img/working.png "Working bot.")
 
 In case of errors a warning window will pop-up with more details. Feel free to modify the code.

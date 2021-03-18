@@ -128,7 +128,7 @@ def access():
     global key1,key2,key3,key4,rtt,fav,cmnt,cmntTxt,content
     Path('C:\Program Files\Twitterbot').mkdir(exist_ok=True)
     keysFile=open(f'C:\\Program Files\\TwitterBot\\settings.txt','w')
-    keysFile.write(f"key1={key1.get()}\nkey2={key2.get()}\nkey3={key3.get()}\nkey4={key4.get()}\nRetweet={rtt.get()}\nFav={fav.get()}\nComment={cmnt.get()}:{cmntTxt.get()}\nSearch={content.get()}")
+    keysFile.write(f"key1={key1.get()}\nkey2={key2.get()}\nkey3={key3.get()}\nkey4={key4.get()}\nSearch={content.get()}")
     keysFile.close()
     readfile()
     top.destroy()
@@ -157,16 +157,19 @@ def settings():
 def readfile():
     global keysFileContent,api,search,api2
     keysFileContent=open(f'C:\\Program Files\\TwitterBot\\settings.txt','r').readlines()
-    keys=[]
-    for x in range(4):
-        keys.append(keysFileContent[x][5:-1])
-    search=keysFileContent[4][7:].split(';')
-    shuffle(search)
-    auth = tweepy.OAuthHandler(keys[0],keys[1])
-    auth.set_access_token(keys[2],keys[3])
-    auth2 = tweepy.AppAuthHandler(keys[0],keys[1])
-    api=tweepy.API(auth,wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
-    api2=tweepy.API(auth2,wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+    if keysFileContent == []:
+        settings()
+    else:
+        keys=[]
+        for x in range(4):
+            keys.append(keysFileContent[x][5:-1])
+        search=keysFileContent[4][7:].split(';')
+        shuffle(search)
+        auth = tweepy.OAuthHandler(keys[0],keys[1])
+        auth.set_access_token(keys[2],keys[3])
+        auth2 = tweepy.AppAuthHandler(keys[0],keys[1])
+        api=tweepy.API(auth,wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+        api2=tweepy.API(auth2,wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 if not Path('C:\\Program Files\\TwitterBot\\settings.txt').exists(): 
     settings()
 else:
