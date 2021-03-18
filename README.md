@@ -18,7 +18,7 @@ pip install tweepy Pillow
 
 When running the script for the first time a "Bot Settings" window will appear for you to input the necessary data.
 
-![Settings](/Twitterbot/img/settings.png "Bot Settings window.")
+![settings](/img/settings.png "Bot Settings window.")
 
 In the **Keys & Tokens** section you have to input the four required API Keys.
 
@@ -26,10 +26,10 @@ In the **Search for tweets** field you'll input the word you want the bot to int
 
 Hitting the **ENTER** button will create a "_settings.txt_" file which will storage all the previous data. "Bot Settings" will close automatically.
 
-![BotGUI](/Twitterbot/img/gui.png "TwitterBot window.")
+![botgui](/img/gui.png "TwitterBot window.")
 
 Now just input the @ and click START BOT. The border will turn green and a terminal will show up.
 
-![BotGUI working](/Twitterbot/img/working.png "Working bot.")
+![botgui working](/img/working.png "Working bot.")
 
 In case of errors a warning window will pop-up with more details. Feel free to modify the code.
