@@ -1,10 +1,13 @@
-# TwitterBot GUI
+# 🐦 TwitterBot GUI
 
-I made this program to make easier the creation of Twitter Bots. The graphical interface eases the process, with no need to write code.
-The program was written in **Python3** using Twitter's API v1.1 to gather the data and execute the actions.
+I originally coded Twitterbot to retweet all my friends' tweets that contained my name.
+Seeing the potential 📈 of the project I made a GUI that requests only the required information  needed to create a Twitter bot. Now everyone can have their own bot for  free 🤑.
+I believe 🙏 this will help marketing campaigns and companies advertisements.
+
+The program is written in **Python3** using Twitter's API v1.1 to gather the data and execute the actions.
 
 
-## Dependencies
+## 📚 Dependencies
 In order to the script run correctly you'll have to install two third-party modules:
 - Tweepy
 - PIL
@@ -14,7 +17,7 @@ Just use the commands shown below in your terminal.
 pip install tweepy Pillow
 ```
 
-## How does it work
+## ⚙️ How does it work
 
 When running the script for the first time a "Bot Settings" window will appear for you to input the necessary data.
 
